@@ -3,401 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Native OS — The Operating System Built for AI</title>
-    <meta name="description" content="An open source operating system designed from the ground up with AI as a first-class citizen. No hype, just code.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>AI NATIVE OS</title>
+    <meta name="description" content="The world's first functional AI-native operating system. Open source. Built by combining the best open source projects.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grain"></div>
+    <div class="scanlines"></div>
 
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="logo-icon">◈</span>
-                <span>ainative</span>
-            </a>
-            <div class="nav-links">
-                <a href="#vision">Vision</a>
-                <a href="#architecture">Architecture</a>
-                <a href="#contribute">Contribute</a>
-                <a href="https://github.com/raym33/ainative" class="nav-github" target="_blank" rel="noopener">
-                    <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    GitHub
-                </a>
-            </div>
-        </div>
-    </nav>
+    <header class="header">
+        <pre class="logo-ascii">
+    ___    ____   _   _____  _______________    ________
+   /   |  /  _/  / | / /   |/_  __/  _/ |  / / ____/
+  / /| |  / /   /  |/ / /| | / /  / / | | / / __/
+ / ___ |_/ /   / /|  / ___ |/ / _/ /  | |/ / /___
+/_/  |_/___/  /_/ |_/_/  |_/_/ /___/  |___/_____/
 
-    <header class="hero">
-        <div class="hero-content">
-            <div class="badge">
-                <span class="badge-dot"></span>
-                Phase 0 — Early Exploration
-            </div>
-            <h1>The Operating System<br>Built <span class="gradient-text">for AI</span></h1>
-            <p class="hero-subtitle">
-                An open source OS where AI isn't a layer on top — it's fundamental to the architecture.
-                No marketing fluff. No vaporware. Just an honest attempt to build something that doesn't exist yet.
-            </p>
-            <div class="hero-cta">
-                <a href="https://github.com/raym33/ainative" class="btn btn-primary" target="_blank" rel="noopener">
-                    <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    View on GitHub
-                </a>
-                <a href="#contribute" class="btn btn-secondary">Join the Project</a>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="terminal">
-                <div class="terminal-header">
-                    <span class="terminal-dot red"></span>
-                    <span class="terminal-dot yellow"></span>
-                    <span class="terminal-dot green"></span>
-                    <span class="terminal-title">ainative</span>
-                </div>
-                <div class="terminal-body">
-                    <div class="terminal-line">
-                        <span class="prompt">$</span>
-                        <span class="command">ainative --version</span>
-                    </div>
-                    <div class="terminal-line output">
-                        <span>AI Native OS v0.0.1-alpha (unreleased)</span>
-                    </div>
-                    <div class="terminal-line output">
-                        <span class="dim">Kernel: undefined (we're still deciding)</span>
-                    </div>
-                    <div class="terminal-line output">
-                        <span class="dim">AI Runtime: conceptual</span>
-                    </div>
-                    <div class="terminal-line output">
-                        <span class="dim">Status: looking for contributors</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="prompt">$</span>
-                        <span class="command typing">git clone https://github.com/raym33/ainative<span class="cursor">_</span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+ ██████╗ ███████╗
+██╔═══██╗██╔════╝
+██║   ██║███████╗
+██║   ██║╚════██║
+╚██████╔╝███████║
+ ╚═════╝ ╚══════╝
+        </pre>
+        <nav class="nav">
+            <a href="#about">[ABOUT]</a>
+            <a href="#mission">[MISSION]</a>
+            <a href="#projects">[PROJECTS]</a>
+            <a href="#collaborate">[COLLABORATE]</a>
+            <a href="https://github.com/raym33/ainative" target="_blank">[GITHUB]</a>
+        </nav>
     </header>
 
-    <section class="honesty-section">
-        <div class="container">
-            <div class="honesty-card">
-                <h2>Let's be honest</h2>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tagline">══════════════════════════════════════════════════════</p>
+                <h1>THE WORLD'S FIRST FUNCTIONAL<br>AI-NATIVE OPERATING SYSTEM</h1>
+                <p class="tagline">══════════════════════════════════════════════════════</p>
+                <p class="subtitle">
+                    100% OPEN SOURCE<br>
+                    BUILT BY THE COMMUNITY, FOR THE COMMUNITY
+                </p>
+                <div class="status-box">
+                    <p>STATUS: PHASE 0 - SEEKING COLLABORATORS</p>
+                    <p>LICENSE: OPEN SOURCE (MIT/APACHE 2.0)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>/// ABOUT</h2>
+            <div class="content-box">
                 <p>
-                    This project is in its earliest stages. We don't have a working OS yet.
-                    We don't have all the answers. What we do have is a clear vision and a
-                    commitment to building it in the open, with anyone who wants to help.
+                    This is not another AI wrapper. This is not a gimmick.
                 </p>
                 <p>
-                    We're not promising to revolutionize computing next month. We're asking:
-                    <strong>what would an OS look like if AI was designed in from day one?</strong>
+                    We are building the first operating system where AI is not
+                    an application layer—it is fundamental to the architecture.
+                </p>
+                <p>
+                    We are assembling the best open source components that already
+                    exist, combining them with new code (vibe-coded or handcrafted),
+                    and creating something that has never existed before.
+                </p>
+                <p class="highlight">
+                    > A FUNCTIONAL AI-NATIVE OS PROTOTYPE
                 </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="vision" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Vision</h2>
-                <p>What we're trying to build</p>
+        <section id="mission" class="section">
+            <h2>/// MISSION</h2>
+            <div class="content-box">
+                <pre class="mission-text">
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│  1. IDENTIFY the best open source projects for each        │
+│     component of an AI-native OS                           │
+│                                                             │
+│  2. COLLABORATE with their creators to integrate           │
+│     their work into a unified system                       │
+│                                                             │
+│  3. BUILD the missing pieces using modern AI-assisted      │
+│     development (vibe coding) and traditional methods      │
+│                                                             │
+│  4. RELEASE the first functional prototype as              │
+│     100% open source software                              │
+│                                                             │
+│  5. ITERATE with the community until we have a             │
+│     production-ready AI-native operating system            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+                </pre>
             </div>
-            <div class="vision-grid">
-                <div class="vision-card">
-                    <div class="vision-icon">⚡</div>
-                    <h3>AI as Infrastructure</h3>
-                    <p>Not an app you install, but a system primitive. Like how Unix treats everything as a file, we want to treat AI capabilities as a fundamental resource available to every process.</p>
-                </div>
-                <div class="vision-card">
-                    <div class="vision-icon">🔒</div>
-                    <h3>Privacy by Default</h3>
-                    <p>Local inference first. Your data stays on your machine unless you explicitly choose otherwise. No phoning home, no cloud requirements for basic functionality.</p>
-                </div>
-                <div class="vision-card">
-                    <div class="vision-icon">🧩</div>
-                    <h3>Modular Architecture</h3>
-                    <p>Pick the components you need. Swap out the AI runtime, choose your UI paradigm, run on different hardware. Not a monolith, but a toolkit.</p>
-                </div>
-                <div class="vision-card">
-                    <div class="vision-icon">🔧</div>
-                    <h3>Developer First</h3>
-                    <p>If it annoys you, it's probably wrong. We're building for people who ship code, not for demo videos. Practical over impressive.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="architecture" class="section section-dark">
-        <div class="container">
-            <div class="section-header">
-                <h2>Architecture</h2>
-                <p>Components under exploration</p>
-            </div>
-            <div class="architecture-diagram">
-                <div class="arch-layer">
-                    <div class="arch-label">Applications</div>
-                    <div class="arch-items">
-                        <div class="arch-item">AI-Native Apps</div>
-                        <div class="arch-item">Traditional Apps</div>
-                        <div class="arch-item">AI Shell</div>
-                    </div>
-                </div>
-                <div class="arch-connector">
-                    <svg viewBox="0 0 100 20" preserveAspectRatio="none">
-                        <path d="M0,10 L100,10" stroke="currentColor" stroke-width="2" stroke-dasharray="5,5"/>
-                    </svg>
-                </div>
-                <div class="arch-layer">
-                    <div class="arch-label">AI Runtime Layer</div>
-                    <div class="arch-items">
-                        <div class="arch-item highlight">Model Manager</div>
-                        <div class="arch-item highlight">Inference Engine</div>
-                        <div class="arch-item highlight">Context Bus</div>
-                    </div>
-                </div>
-                <div class="arch-connector">
-                    <svg viewBox="0 0 100 20" preserveAspectRatio="none">
-                        <path d="M0,10 L100,10" stroke="currentColor" stroke-width="2" stroke-dasharray="5,5"/>
-                    </svg>
-                </div>
-                <div class="arch-layer">
-                    <div class="arch-label">System Services</div>
-                    <div class="arch-items">
-                        <div class="arch-item">IPC</div>
-                        <div class="arch-item">Scheduler</div>
-                        <div class="arch-item">Memory</div>
-                        <div class="arch-item">Drivers</div>
-                    </div>
-                </div>
-                <div class="arch-connector">
-                    <svg viewBox="0 0 100 20" preserveAspectRatio="none">
-                        <path d="M0,10 L100,10" stroke="currentColor" stroke-width="2" stroke-dasharray="5,5"/>
-                    </svg>
-                </div>
-                <div class="arch-layer">
-                    <div class="arch-label">Kernel</div>
-                    <div class="arch-items">
-                        <div class="arch-item uncertain">TBD — Linux? Microkernel? Unikernel?</div>
-                    </div>
-                </div>
-            </div>
-            <p class="architecture-note">This is a conceptual diagram. The actual architecture will emerge from community discussion and experimentation.</p>
-        </div>
-    </section>
+        <section id="projects" class="section">
+            <h2>/// TARGET PROJECTS FOR COLLABORATION</h2>
+            <div class="content-box">
+                <p class="section-intro">
+                    We are reaching out to the creators of these projects
+                    to join forces and build something greater together:
+                </p>
 
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Open Questions</h2>
-                <p>Decisions we need to make together</p>
-            </div>
-            <div class="questions-grid">
-                <div class="question-card">
-                    <span class="question-number">01</span>
-                    <h3>What base do we build on?</h3>
-                    <p>Modified Linux kernel for compatibility? Rust-based microkernel (Redox) for safety? Unikernel for efficiency? Something else entirely?</p>
-                    <a href="https://github.com/raym33/ainative/discussions" class="question-link">Discuss →</a>
-                </div>
-                <div class="question-card">
-                    <span class="question-number">02</span>
-                    <h3>Which AI models to prioritize?</h3>
-                    <p>Large language models that run locally? Smaller specialized models? Hybrid approach with cloud fallback? How do we balance capability vs. resource usage?</p>
-                    <a href="https://github.com/raym33/ainative/discussions" class="question-link">Discuss →</a>
-                </div>
-                <div class="question-card">
-                    <span class="question-number">03</span>
-                    <h3>What's the target platform?</h3>
-                    <p>Desktop workstations? Servers? Embedded devices? All of the above with different configurations? Start narrow or wide?</p>
-                    <a href="https://github.com/raym33/ainative/discussions" class="question-link">Discuss →</a>
-                </div>
-                <div class="question-card">
-                    <span class="question-number">04</span>
-                    <h3>How do we handle AI-to-process communication?</h3>
-                    <p>New IPC mechanisms? Extended system calls? Shared memory with AI context? What's the API surface for apps to interact with AI?</p>
-                    <a href="https://github.com/raym33/ainative/discussions" class="question-link">Discuss →</a>
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="project-list">
+                    <div class="project">
+                        <h3>[ KERNEL / BASE ]</h3>
+                        <ul>
+                            <li><a href="https://www.redox-os.org/" target="_blank">REDOX OS</a> - Unix-like microkernel in Rust</li>
+                            <li><a href="https://github.com/seL4/seL4" target="_blank">seL4</a> - Formally verified microkernel</li>
+                            <li><a href="https://github.com/nickmqb/former" target="_blank">Linux kernel</a> - Modified for AI workloads</li>
+                        </ul>
+                    </div>
 
-    <section class="section section-dark">
-        <div class="container">
-            <div class="section-header">
-                <h2>Standing on Shoulders</h2>
-                <p>Open source projects we're evaluating</p>
-            </div>
-            <div class="projects-grid">
-                <a href="https://www.redox-os.org/" class="project-card" target="_blank" rel="noopener">
-                    <div class="project-icon">🦀</div>
-                    <h3>Redox OS</h3>
-                    <p>Unix-like microkernel written in Rust. Memory safe, modern design.</p>
-                </a>
-                <a href="https://github.com/ggerganov/llama.cpp" class="project-card" target="_blank" rel="noopener">
-                    <div class="project-icon">🦙</div>
-                    <h3>llama.cpp</h3>
-                    <p>Efficient LLM inference in C/C++. The foundation for local AI.</p>
-                </a>
-                <a href="https://github.com/ggerganov/whisper.cpp" class="project-card" target="_blank" rel="noopener">
-                    <div class="project-icon">🎤</div>
-                    <h3>whisper.cpp</h3>
-                    <p>Speech recognition that runs anywhere. Voice as input primitive.</p>
-                </a>
-                <a href="https://wayland.freedesktop.org/" class="project-card" target="_blank" rel="noopener">
-                    <div class="project-icon">🖼️</div>
-                    <h3>Wayland</h3>
-                    <p>Modern display protocol. Clean slate for AI-native UI.</p>
-                </a>
-            </div>
-        </div>
-    </section>
+                    <div class="project">
+                        <h3>[ AI INFERENCE ]</h3>
+                        <ul>
+                            <li><a href="https://github.com/ggerganov/llama.cpp" target="_blank">llama.cpp</a> - Efficient LLM inference</li>
+                            <li><a href="https://github.com/ggerganov/whisper.cpp" target="_blank">whisper.cpp</a> - Local speech recognition</li>
+                            <li><a href="https://github.com/mlc-ai/mlc-llm" target="_blank">MLC-LLM</a> - Universal LLM deployment</li>
+                            <li><a href="https://github.com/mozilla/DeepSpeech" target="_blank">DeepSpeech</a> - Speech-to-text engine</li>
+                        </ul>
+                    </div>
 
-    <section id="contribute" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contribute</h2>
-                <p>We need all kinds of people</p>
-            </div>
-            <div class="contribute-grid">
-                <div class="contribute-card">
-                    <h3>Systems Developers</h3>
-                    <p>C, Rust, Zig — kernel hacking, driver development, low-level optimization. If you've written code that runs without an OS, we need you.</p>
-                </div>
-                <div class="contribute-card">
-                    <h3>ML/AI Engineers</h3>
-                    <p>Model optimization, efficient inference, quantization, hardware acceleration. Make AI run fast with minimal resources.</p>
-                </div>
-                <div class="contribute-card">
-                    <h3>UX Designers</h3>
-                    <p>Design interfaces that help, not annoy. What does an AI-native shell look like? How do we surface AI capabilities without being intrusive?</p>
-                </div>
-                <div class="contribute-card">
-                    <h3>Technical Writers</h3>
-                    <p>Document everything. Architecture decisions, API references, tutorials. Good docs are the difference between a project and a community.</p>
-                </div>
-                <div class="contribute-card">
-                    <h3>Researchers</h3>
-                    <p>What papers should we read? What prior art exists? Help us learn from what came before.</p>
-                </div>
-                <div class="contribute-card">
-                    <h3>Skeptics</h3>
-                    <p>Poke holes in our ideas. Tell us what won't work. The best way to avoid building vaporware is to have people who'll call it out.</p>
-                </div>
-            </div>
-            <div class="contribute-cta">
-                <a href="https://github.com/raym33/ainative" class="btn btn-primary" target="_blank" rel="noopener">
-                    Start on GitHub
-                </a>
-                <p class="contribute-note">Read the README, check the issues, join a discussion. Or just star the repo and watch how it evolves.</p>
-            </div>
-        </div>
-    </section>
+                    <div class="project">
+                        <h3>[ DISPLAY / UI ]</h3>
+                        <ul>
+                            <li><a href="https://wayland.freedesktop.org/" target="_blank">Wayland</a> - Modern display protocol</li>
+                            <li><a href="https://github.com/nickmqb/wlroots" target="_blank">wlroots</a> - Modular Wayland library</li>
+                            <li><a href="https://github.com/nickmqb/cosmic" target="_blank">COSMIC</a> - Rust-based desktop</li>
+                        </ul>
+                    </div>
 
-    <section class="section section-dark">
-        <div class="container">
-            <div class="roadmap">
-                <div class="section-header">
-                    <h2>Roadmap</h2>
-                    <p>Where we're going (tentatively)</p>
+                    <div class="project">
+                        <h3>[ SYSTEM TOOLS ]</h3>
+                        <ul>
+                            <li><a href="https://github.com/nickmqb/nushell" target="_blank">Nushell</a> - Modern shell</li>
+                            <li><a href="https://github.com/nickmqb/starship" target="_blank">Starship</a> - Cross-shell prompt</li>
+                            <li><a href="https://github.com/nickmqb/fish-shell" target="_blank">Fish</a> - Smart command line</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="roadmap-timeline">
-                    <div class="roadmap-item current">
-                        <div class="roadmap-marker"></div>
-                        <div class="roadmap-content">
-                            <span class="roadmap-phase">Phase 0</span>
-                            <h3>Exploration</h3>
-                            <ul>
-                                <li>Define architecture direction</li>
-                                <li>Build community</li>
-                                <li>Evaluate base technologies</li>
-                                <li>Create initial prototypes/POCs</li>
-                            </ul>
-                        </div>
+
+                <p class="note">
+                    + Many more to be identified by the community
+                </p>
+            </div>
+        </section>
+
+        <section id="collaborate" class="section">
+            <h2>/// CALL FOR COLLABORATION</h2>
+            <div class="content-box">
+                <pre class="collab-text">
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║  TO: OPEN SOURCE PROJECT MAINTAINERS                          ║
+║                                                               ║
+║  We believe that by combining existing open source projects   ║
+║  with targeted new development, we can create the world's     ║
+║  first functional AI-native operating system.                 ║
+║                                                               ║
+║  We are not here to fork your work and disappear.             ║
+║  We are here to collaborate, contribute back, and build       ║
+║  something that benefits the entire open source ecosystem.    ║
+║                                                               ║
+║  If you are interested in being part of this project:         ║
+║                                                               ║
+║  > Open an issue on our GitHub                                ║
+║  > Join the discussion                                        ║
+║  > Propose how your project could fit                         ║
+║                                                               ║
+║  GITHUB: github.com/raym33/ainative                           ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+                </pre>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>/// WHO WE NEED</h2>
+            <div class="content-box">
+                <div class="needs-grid">
+                    <div class="need-item">
+                        <span class="need-icon">[>]</span>
+                        <span>KERNEL DEVELOPERS</span>
+                        <span class="lang">C / Rust / Zig</span>
                     </div>
-                    <div class="roadmap-item">
-                        <div class="roadmap-marker"></div>
-                        <div class="roadmap-content">
-                            <span class="roadmap-phase">Phase 1</span>
-                            <h3>Foundation</h3>
-                            <ul>
-                                <li>Minimal bootable system</li>
-                                <li>Basic AI runtime integration</li>
-                                <li>Developer documentation</li>
-                            </ul>
-                        </div>
+                    <div class="need-item">
+                        <span class="need-icon">[>]</span>
+                        <span>ML ENGINEERS</span>
+                        <span class="lang">Inference optimization</span>
                     </div>
-                    <div class="roadmap-item">
-                        <div class="roadmap-marker"></div>
-                        <div class="roadmap-content">
-                            <span class="roadmap-phase">Phase 2</span>
-                            <h3>Usability</h3>
-                            <ul>
-                                <li>Shell with AI integration</li>
-                                <li>Package management</li>
-                                <li>Basic desktop environment</li>
-                            </ul>
-                        </div>
+                    <div class="need-item">
+                        <span class="need-icon">[>]</span>
+                        <span>SYSTEMS PROGRAMMERS</span>
+                        <span class="lang">Drivers / IPC</span>
                     </div>
-                    <div class="roadmap-item">
-                        <div class="roadmap-marker"></div>
-                        <div class="roadmap-content">
-                            <span class="roadmap-phase">Phase 3+</span>
-                            <h3>The Future</h3>
-                            <ul>
-                                <li>To be determined by the community</li>
-                            </ul>
-                        </div>
+                    <div class="need-item">
+                        <span class="need-icon">[>]</span>
+                        <span>UI/UX DESIGNERS</span>
+                        <span class="lang">AI-native interfaces</span>
+                    </div>
+                    <div class="need-item">
+                        <span class="need-icon">[>]</span>
+                        <span>TECHNICAL WRITERS</span>
+                        <span class="lang">Documentation</span>
+                    </div>
+                    <div class="need-item">
+                        <span class="need-icon">[>]</span>
+                        <span>PROJECT MAINTAINERS</span>
+                        <span class="lang">Your existing work</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="section">
+            <h2>/// APPROACH</h2>
+            <div class="content-box">
+                <div class="approach-list">
+                    <p><span class="bullet">■</span> We use AI to accelerate development (vibe coding)</p>
+                    <p><span class="bullet">■</span> We integrate existing battle-tested open source</p>
+                    <p><span class="bullet">■</span> We write new code only where necessary</p>
+                    <p><span class="bullet">■</span> We document everything transparently</p>
+                    <p><span class="bullet">■</span> We keep it 100% open source, always</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section">
+            <div class="cta-box">
+                <pre>
+┌───────────────────────────────────────┐
+│                                       │
+│   READY TO BUILD THE FUTURE?          │
+│                                       │
+│   github.com/raym33/ainative          │
+│                                       │
+│   Star the repo. Open an issue.       │
+│   Join the discussion. Write code.    │
+│                                       │
+│   LET'S MAKE HISTORY.                 │
+│                                       │
+└───────────────────────────────────────┘
+                </pre>
+                <a href="https://github.com/raym33/ainative" class="btn" target="_blank">[ENTER GITHUB]</a>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-icon">◈</span>
-                    <span>ainative</span>
-                </div>
-                <p class="footer-tagline">"The best way to predict the future is to build it" — but with commits, not slides.</p>
-                <div class="footer-links">
-                    <a href="https://github.com/raym33/ainative" target="_blank" rel="noopener">GitHub</a>
-                    <a href="https://github.com/raym33/ainative/discussions" target="_blank" rel="noopener">Discussions</a>
-                    <a href="https://github.com/raym33/ainative/issues" target="_blank" rel="noopener">Issues</a>
-                </div>
-                <p class="footer-license">Open Source — License TBD (likely MIT or Apache 2.0)</p>
-            </div>
+        <div class="footer-content">
+            <p>AI NATIVE OS — 100% OPEN SOURCE</p>
+            <p class="footer-links">
+                <a href="https://github.com/raym33/ainative" target="_blank">[GITHUB]</a>
+                <a href="https://github.com/raym33/ainative/discussions" target="_blank">[DISCUSSIONS]</a>
+                <a href="https://github.com/raym33/ainative/issues" target="_blank">[ISSUES]</a>
+            </p>
+            <p class="copyright">MMXXVI — THE FUTURE IS OPEN</p>
         </div>
     </footer>
-
-    <script>
-        // Minimal JS for smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Typing animation for terminal
-        const cursor = document.querySelector('.cursor');
-        if (cursor) {
-            setInterval(() => {
-                cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
-            }, 530);
-        }
-    </script>
 </body>
 </html>
