@@ -118,17 +118,57 @@ pre {
     border-bottom: 1px solid var(--color-dim);
 }
 
-.logo-ascii {
-    font-size: 8px;
-    line-height: 1.1;
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
     margin-bottom: 24px;
-    display: inline-block;
-    text-align: left;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
-    .logo-ascii {
-        font-size: 5px;
+.logo-cube {
+    font-size: 10px;
+    line-height: 1.0;
+    text-align: left;
+    margin: 0;
+}
+
+.logo-text {
+    font-size: 6px;
+    line-height: 1.1;
+    text-align: left;
+    margin: 0;
+}
+
+.footer-logo {
+    font-size: 8px;
+    line-height: 1.0;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .logo-cube {
+        font-size: 8px;
+    }
+
+    .logo-text {
+        font-size: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        display: none;
+    }
+
+    .logo-cube {
+        font-size: 10px;
     }
 }
 
@@ -324,6 +364,23 @@ pre {
     color: var(--color-bg);
     text-decoration: none;
     opacity: 1;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+.contact-note {
+    margin-top: 24px;
+    color: var(--color-dim);
+    font-size: 12px;
 }
 
 /* === Footer === */

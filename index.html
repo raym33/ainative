@@ -3,34 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI NATIVE OS</title>
+    <title>AI NATIVE OS — ainative.so</title>
     <meta name="description" content="The world's first functional AI-native operating system. Open source. Built by combining the best open source projects.">
+    <meta property="og:title" content="AI NATIVE OS">
+    <meta property="og:description" content="The world's first functional AI-native operating system. 100% Open Source.">
+    <meta property="og:url" content="https://ainative.so">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ainativeos">
+    <meta name="twitter:title" content="AI NATIVE OS">
+    <meta name="twitter:description" content="The world's first functional AI-native operating system. 100% Open Source.">
+    <link rel="canonical" href="https://ainative.so">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="scanlines"></div>
 
     <header class="header">
-        <pre class="logo-ascii">
-    ___    ____   _   _____  _______________    ________
-   /   |  /  _/  / | / /   |/_  __/  _/ |  / / ____/
-  / /| |  / /   /  |/ / /| | / /  / / | | / / __/
- / ___ |_/ /   / /|  / ___ |/ / _/ /  | |/ / /___
-/_/  |_/___/  /_/ |_/_/  |_/_/ /___/  |___/_____/
-
- ██████╗ ███████╗
-██╔═══██╗██╔════╝
-██║   ██║███████╗
-██║   ██║╚════██║
-╚██████╔╝███████║
- ╚═════╝ ╚══════╝
-        </pre>
+        <div class="logo-container">
+            <pre class="logo-cube">
+    ┌───┐┌───┐
+    │░░░││▓▓▓│
+    └───┘└───┘
+    ┌───┐┌───┐
+    │▓▓▓││███│
+    └───┘└───┘
+┌───┐┌───┐
+│   ││░░░│
+└───┘└───┘
+┌───┐┌───┐
+│░░░││▓▓▓│
+└───┘└───┘
+            </pre>
+            <pre class="logo-text">
+ █████╗ ██╗    ███╗   ██╗ █████╗ ████████╗██╗██╗   ██╗███████╗
+██╔══██╗██║    ████╗  ██║██╔══██╗╚══██╔══╝██║██║   ██║██╔════╝
+███████║██║    ██╔██╗ ██║███████║   ██║   ██║██║   ██║█████╗
+██╔══██║██║    ██║╚██╗██║██╔══██║   ██║   ██║╚██╗ ██╔╝██╔══╝
+██║  ██║██║    ██║ ╚████║██║  ██║   ██║   ██║ ╚████╔╝ ███████╗
+╚═╝  ╚═╝╚═╝    ╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═══╝  ╚══════╝
+                         ██████╗ ███████╗
+                        ██╔═══██╗██╔════╝
+                        ██║   ██║███████╗
+                        ██║   ██║╚════██║
+                        ╚██████╔╝███████║
+                         ╚═════╝ ╚══════╝
+            </pre>
+        </div>
         <nav class="nav">
             <a href="#about">[ABOUT]</a>
             <a href="#mission">[MISSION]</a>
             <a href="#projects">[PROJECTS]</a>
             <a href="#collaborate">[COLLABORATE]</a>
             <a href="https://github.com/raym33/ainative" target="_blank">[GITHUB]</a>
+            <a href="https://x.com/ainativeos" target="_blank">[TWITTER]</a>
         </nav>
     </header>
 
@@ -47,6 +73,7 @@
                 <div class="status-box">
                     <p>STATUS: PHASE 0 - SEEKING COLLABORATORS</p>
                     <p>LICENSE: OPEN SOURCE (MIT/APACHE 2.0)</p>
+                    <p>WEB: ainative.so</p>
                 </div>
             </div>
         </section>
@@ -112,7 +139,7 @@
                         <ul>
                             <li><a href="https://www.redox-os.org/" target="_blank">REDOX OS</a> - Unix-like microkernel in Rust</li>
                             <li><a href="https://github.com/seL4/seL4" target="_blank">seL4</a> - Formally verified microkernel</li>
-                            <li><a href="https://github.com/nickmqb/former" target="_blank">Linux kernel</a> - Modified for AI workloads</li>
+                            <li><a href="https://kernel.org/" target="_blank">Linux kernel</a> - Modified for AI workloads</li>
                         </ul>
                     </div>
 
@@ -130,7 +157,7 @@
                         <h3>[ DISPLAY / UI ]</h3>
                         <ul>
                             <li><a href="https://wayland.freedesktop.org/" target="_blank">Wayland</a> - Modern display protocol</li>
-                            <li><a href="https://github.com/nickmqb/wlroots" target="_blank">wlroots</a> - Modular Wayland library</li>
+                            <li><a href="https://gitlab.freedesktop.org/wlroots/wlroots" target="_blank">wlroots</a> - Modular Wayland library</li>
                             <li><a href="https://github.com/nickmqb/cosmic" target="_blank">COSMIC</a> - Rust-based desktop</li>
                         </ul>
                     </div>
@@ -138,9 +165,9 @@
                     <div class="project">
                         <h3>[ SYSTEM TOOLS ]</h3>
                         <ul>
-                            <li><a href="https://github.com/nickmqb/nushell" target="_blank">Nushell</a> - Modern shell</li>
-                            <li><a href="https://github.com/nickmqb/starship" target="_blank">Starship</a> - Cross-shell prompt</li>
-                            <li><a href="https://github.com/nickmqb/fish-shell" target="_blank">Fish</a> - Smart command line</li>
+                            <li><a href="https://github.com/nushell/nushell" target="_blank">Nushell</a> - Modern shell</li>
+                            <li><a href="https://github.com/starship/starship" target="_blank">Starship</a> - Cross-shell prompt</li>
+                            <li><a href="https://github.com/fish-shell/fish-shell" target="_blank">Fish</a> - Smart command line</li>
                         </ul>
                     </div>
                 </div>
@@ -170,10 +197,12 @@
 ║  If you are interested in being part of this project:         ║
 ║                                                               ║
 ║  > Open an issue on our GitHub                                ║
+║  > DM us on Twitter/X: @ainativeos                            ║
 ║  > Join the discussion                                        ║
-║  > Propose how your project could fit                         ║
 ║                                                               ║
+║  WEB: ainative.so                                             ║
 ║  GITHUB: github.com/raym33/ainative                           ║
+║  TWITTER: x.com/ainativeos                                    ║
 ║                                                               ║
 ╚═══════════════════════════════════════════════════════════════╝
                 </pre>
@@ -231,6 +260,20 @@
             </div>
         </section>
 
+        <section class="section">
+            <h2>/// CONTACT</h2>
+            <div class="content-box">
+                <div class="contact-info">
+                    <p><span class="bullet">■</span> TWITTER/X: <a href="https://x.com/ainativeos" target="_blank">@ainativeos</a> (DMs open)</p>
+                    <p><span class="bullet">■</span> GITHUB: <a href="https://github.com/raym33/ainative" target="_blank">github.com/raym33/ainative</a></p>
+                    <p><span class="bullet">■</span> WEB: <a href="https://ainative.so">ainative.so</a></p>
+                </div>
+                <p class="contact-note">
+                    No email. Reach us via Twitter DMs or GitHub issues.
+                </p>
+            </div>
+        </section>
+
         <section class="section cta-section">
             <div class="cta-box">
                 <pre>
@@ -238,27 +281,41 @@
 │                                       │
 │   READY TO BUILD THE FUTURE?          │
 │                                       │
+│   ainative.so                         │
 │   github.com/raym33/ainative          │
+│   @ainativeos                         │
 │                                       │
 │   Star the repo. Open an issue.       │
-│   Join the discussion. Write code.    │
+│   DM us. Write code.                  │
 │                                       │
 │   LET'S MAKE HISTORY.                 │
 │                                       │
 └───────────────────────────────────────┘
                 </pre>
-                <a href="https://github.com/raym33/ainative" class="btn" target="_blank">[ENTER GITHUB]</a>
+                <div class="cta-buttons">
+                    <a href="https://github.com/raym33/ainative" class="btn" target="_blank">[GITHUB]</a>
+                    <a href="https://x.com/ainativeos" class="btn" target="_blank">[TWITTER]</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
+            <pre class="footer-logo">
+┌───┐┌───┐
+│░░░││▓▓▓│
+└───┘└───┘
+┌───┐┌───┐
+│▓▓▓││███│
+└───┘└───┘
+            </pre>
             <p>AI NATIVE OS — 100% OPEN SOURCE</p>
             <p class="footer-links">
+                <a href="https://ainative.so">[AINATIVE.SO]</a>
                 <a href="https://github.com/raym33/ainative" target="_blank">[GITHUB]</a>
+                <a href="https://x.com/ainativeos" target="_blank">[TWITTER]</a>
                 <a href="https://github.com/raym33/ainative/discussions" target="_blank">[DISCUSSIONS]</a>
-                <a href="https://github.com/raym33/ainative/issues" target="_blank">[ISSUES]</a>
             </p>
             <p class="copyright">MMXXVI — THE FUTURE IS OPEN</p>
         </div>

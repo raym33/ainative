@@ -1,76 +1,147 @@
-# AI Native OS
+# AI NATIVE OS
 
-> An operating system designed from the ground up with AI as a first-class citizen. No marketing fluff, just code.
+```
+┌───┐┌───┐
+│░░░││▓▓▓│
+└───┘└───┘
+┌───┐┌───┐
+│▓▓▓││███│
+└───┘└───┘
+┌───┐┌───┐
+│   ││░░░│
+└───┘└───┘
+┌───┐┌───┐
+│░░░││▓▓▓│
+└───┘└───┘
+```
+
+> **The world's first functional AI-native operating system.**
+> 100% Open Source. Built by the community, for the community.
+
+🌐 **Website:** [ainative.so](https://ainative.so)
+🐦 **Twitter:** [@ainativeos](https://x.com/ainativeos)
+💬 **Contact:** DM on Twitter or GitHub Issues (no email)
+
+---
 
 ## What is this?
 
-An open source project to build an OS where AI isn't a layer on top, but a fundamental part of the architecture. We're in **Phase 0**: figuring out what to build and how.
+A collaborative open source project to build an operating system where AI isn't a layer on top—it's fundamental to the architecture.
 
-## Philosophy
+**Our approach:**
+- Unite existing open source projects (kernels, AI runtimes, shells, UIs)
+- Collaborate directly with their creators
+- Build missing pieces using AI-assisted development (vibe coding) and traditional methods
+- Release everything as 100% open source
 
-- **Don't reinvent the wheel** — Integrate existing open source projects when it makes sense
-- **Pragmatism > Idealism** — Solutions that work, not perfect architectures on paper
-- **Honest documentation** — If something doesn't work, we say so
-- **Code > Discussion** — PRs welcome, endless debates not so much
+## Mission
 
-## Areas of Work (Proposed)
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│  1. IDENTIFY the best open source projects for each        │
+│     component of an AI-native OS                           │
+│                                                             │
+│  2. COLLABORATE with their creators to integrate           │
+│     their work into a unified system                       │
+│                                                             │
+│  3. BUILD the missing pieces using modern AI-assisted      │
+│     development (vibe coding) and traditional methods      │
+│                                                             │
+│  4. RELEASE the first functional prototype as              │
+│     100% open source software                              │
+│                                                             │
+│  5. ITERATE with the community until we have a             │
+│     production-ready AI-native operating system            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
 
-| Area | Status | Description |
-|------|--------|-------------|
-| Kernel/Base | :red_circle: TBD | Modified Linux? Microkernel? Different approach? |
-| AI Runtime | :red_circle: TBD | How to run models natively and efficiently |
-| IPC with AI | :red_circle: TBD | Inter-process communication with AI context |
-| Shell/UI | :red_circle: TBD | Interface that leverages AI without being annoying |
-| Drivers/Hardware | :red_circle: TBD | Hardware acceleration for inference |
+## Target Projects for Collaboration
 
-## Open Questions
+We're reaching out to the creators of these projects:
 
-These are decisions we need to make as a community:
+### Kernel / Base
+- [Redox OS](https://www.redox-os.org/) — Unix-like microkernel in Rust
+- [seL4](https://github.com/seL4/seL4) — Formally verified microkernel
+- [Linux kernel](https://kernel.org/) — Modified for AI workloads
 
-1. **What base do we use?** Modified Linux kernel vs microkernel vs unikernel
-2. **Which models do we prioritize?** Local LLMs, small specialized models, hybrid
-3. **Desktop, server, embedded?** Or all three with modular architecture
-4. **How do we handle privacy?** All local vs opt-in cloud
+### AI Inference
+- [llama.cpp](https://github.com/ggerganov/llama.cpp) — Efficient LLM inference
+- [whisper.cpp](https://github.com/ggerganov/whisper.cpp) — Local speech recognition
+- [MLC-LLM](https://github.com/mlc-ai/mlc-llm) — Universal LLM deployment
+
+### Display / UI
+- [Wayland](https://wayland.freedesktop.org/) — Modern display protocol
+- [wlroots](https://gitlab.freedesktop.org/wlroots/wlroots) — Modular Wayland library
+- [COSMIC](https://github.com/pop-os/cosmic) — Rust-based desktop environment
+
+### System Tools
+- [Nushell](https://github.com/nushell/nushell) — Modern shell
+- [Starship](https://github.com/starship/starship) — Cross-shell prompt
+- [Fish](https://github.com/fish-shell/fish-shell) — Smart command line
+
+*+ Many more to be identified by the community*
+
+## Who We Need
+
+| Role | Skills |
+|------|--------|
+| Kernel Developers | C, Rust, Zig |
+| ML Engineers | Inference optimization |
+| Systems Programmers | Drivers, IPC |
+| UI/UX Designers | AI-native interfaces |
+| Technical Writers | Documentation |
+| Project Maintainers | Your existing open source work |
+
+## Current Status
+
+```
+STATUS: PHASE 0 - SEEKING COLLABORATORS
+LICENSE: OPEN SOURCE (MIT/APACHE 2.0)
+```
+
+- [ ] Define architecture direction
+- [ ] Establish collaborations with key projects
+- [ ] Create initial prototypes/POCs
+- [ ] Build community
 
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-You don't need to be an OS expert. We need:
-- Systems developers (C, Rust, Zig)
-- ML/AI folks who understand efficient inference
-- UX designers who hate annoying interfaces
-- Technical writers
-- Testers willing to break things
+**Ways to get involved:**
+- ⭐ Star this repo
+- 💬 Open an issue or discussion
+- 🐦 DM us on Twitter [@ainativeos](https://x.com/ainativeos)
+- 🔧 Submit a PR
 
-## Projects We're Evaluating
+## Contact
 
-- [Redox OS](https://www.redox-os.org/) — Microkernel in Rust
-- [llama.cpp](https://github.com/ggerganov/llama.cpp) — Efficient LLM inference
-- [whisper.cpp](https://github.com/ggerganov/whisper.cpp) — Local speech-to-text
-- [Wayland](https://wayland.freedesktop.org/) — Modern display protocol
+- **Twitter/X:** [@ainativeos](https://x.com/ainativeos) — DMs open
+- **GitHub:** Issues and Discussions
+- **Website:** [ainative.so](https://ainative.so)
 
-*(This list is open to suggestions)*
-
-## Current Status
-
-:construction: **Phase 0: Exploration**
-
-- [ ] Define base architecture
-- [ ] Establish first milestones
-- [ ] Create project structure
-- [ ] First prototypes/POCs
-
-## Links
-
-- [Discussions](https://github.com/raym33/ainative/discussions)
-- [Issues](https://github.com/raym33/ainative/issues)
-- [Landing Page](https://raym33.github.io/ainative/) *(coming soon)*
+*No email. We communicate via Twitter and GitHub.*
 
 ## License
 
-TBD (likely MIT or Apache 2.0)
+Open Source — MIT or Apache 2.0 (TBD)
 
 ---
 
-*"The best way to predict the future is to build it" — but with commits, not slides.*
+```
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║  TO: OPEN SOURCE PROJECT MAINTAINERS                          ║
+║                                                               ║
+║  We are not here to fork your work and disappear.             ║
+║  We are here to collaborate, contribute back, and build       ║
+║  something that benefits the entire open source ecosystem.    ║
+║                                                               ║
+║  Interested? Open an issue or DM @ainativeos                  ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+```
+
+**THE FUTURE IS OPEN.**
