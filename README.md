@@ -130,18 +130,4 @@ Open Source — MIT or Apache 2.0 (TBD)
 
 ---
 
-```
-╔═══════════════════════════════════════════════════════════════╗
-║                                                               ║
-║  TO: OPEN SOURCE PROJECT MAINTAINERS                          ║
-║                                                               ║
-║  We are not here to fork your work and disappear.             ║
-║  We are here to collaborate, contribute back, and build       ║
-║  something that benefits the entire open source ecosystem.    ║
-║                                                               ║
-║  Interested? Open an issue or DM @ainativeos                  ║
-║                                                               ║
-╚═══════════════════════════════════════════════════════════════╝
-```
-
 **THE FUTURE IS OPEN.**
